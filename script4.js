@@ -12,7 +12,7 @@ journalist.forEach(str => {
          journalistnumber.push(str);
         }
     });
-  console.log(journalistnumber.length);
+  console.log("Le nombre de journalistes ayant un numéro dans leur nom : " + journalistnumber.length);
 // ________________________________________________________________________________
 var journalistaude = []
 journalist.forEach(str => { 
@@ -20,7 +20,7 @@ journalist.forEach(str => {
          journalistaude.push(str);
         }
     });
-  console.log(journalistaude.length);
+  console.log("Le nombre de journalistes ayant 'aude' dans leur nom : " + journalistaude.length);
 // ________________________________________________________________________________
 var journalistmaj = []
 journalist.forEach(str => { 
@@ -28,7 +28,7 @@ journalist.forEach(str => {
          journalistmaj.push(str);
         }
     });
-  console.log(journalistmaj.length);
+  console.log("Le nombre de journalistes commençant par une maj : " + journalistmaj.length);
 // ________________________________________________________________________________
 var journalistunderscore = []
 journalist.forEach(str => { 
@@ -37,29 +37,29 @@ journalist.forEach(str => {
         }
     });
     var underscoretotale = journalist.toString().match(/_/gi).length
-  console.log(underscoretotale);
+  console.log("Le nombre de journalistes ayant un underscore : " +underscoretotale);
   // ________________________________________________________________________________
   
-  console.log(journalist.sort());
+  console.log("La liste des journalistes par ordre alphabétique : " +journalist.sort());
 
   // ________________________________________________________________________________
 
-  journalist.forEach(str =>{
-      console.log(str.length)
-  }
-  )
+//   journalist.forEach(str =>{
+//       console.log(str.length)
+//   }
+//   )
     
   var journalistsortedlength = journalist.sort(function(stra, strb){
     return strb.length - stra.length
   }
     );
-    journalistsortedlength.forEach(str => {
-      console.log(str.length)
-    }
-      );
+    // journalistsortedlength.forEach(str => {
+    //   console.log(str.length)
+    // }
+    //   );
   
       var numbertotake = journalist.length-50;
-  console.log(journalistsortedlength.slice(numbertotake));
+  console.log("Les 50 noms les plus courts : " +journalistsortedlength.slice(numbertotake));
 
   
   
